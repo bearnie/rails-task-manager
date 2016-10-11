@@ -1,0 +1,10 @@
+<!-- form_for fait le lien implicite entre le formulaire -->
+<!-- et la methode create -->
+<!-- ce formulaire est utilise pour la creation -->
+<!-- et la mise a jour des taches -->
+
+<%= form_for @task do |f| %>
+  <%= f.text_field :name %>
+  <%= f.submit "Valider" %>
+<% end %>
+<%= link_to "Retour", tasks_path %>
